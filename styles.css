@@ -8,6 +8,7 @@ ul {
   
 li {
     float: left;
+    padding: 15px;
 }
 
 li a {
@@ -16,13 +17,22 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    display: block;
+}
+span{
+    color: #ffb7b7;
+    display: block;
+    transition: 1s;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+li a:hover span{
+    transform: translateY(-100%);
 }
 
-.active {
-    background-color: #04AA6D;
-  }
+li a:before{
+    position: absolute;
+    content: attr(data-link-alt);
+}
