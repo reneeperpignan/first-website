@@ -30,7 +30,7 @@ li>span{
 }
 li>span:nth-child(1){
     color: aliceblue;
-    background-color:antiquewhite;
+    background-color:rgb(241, 129, 181);
     font-size: 32px;
 }
 li>span:nth-child(2){
